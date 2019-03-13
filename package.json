@@ -1,0 +1,36 @@
+{
+  "name": "learning-git",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    
+    "watch": "npm-run-all -p watch:*",
+    "watch:browsersync": "browser-sync",
+    "watch:sassprefixer": "onchange -d 100 sass/style.scss -- node-sass --output-style expanded --source-map true -o css sass -- autoprefixer-cli -o css/style.css", 
+
+    "build": "npm run build:clean && npm run build:sass && npm run build:autoprefixer",
+    "build:clean": "rimraf vendor/*.css",
+    "build:sass": "node-sass --output-style compact -o css sass",
+    "build:autoprefixer": "autoprefixer-cli css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcinGim/nauka-gita.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcinGim/nauka-gita/issues"
+  },
+  "homepage": "https://github.com/MarcinGim/nauka-gita#readme",
+  "devDependencies": {
+    "autoprefixer-cli": "^1.0.0",
+    "browser-sync": "^2.26.3",
+    "node-sass": "^4.11.0",
+    "nu-html-checker": "^0.1.0",
+    "onchange": "^5.2.0"
+  }
+}
