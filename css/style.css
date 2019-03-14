@@ -146,6 +146,7 @@ a:hover {
 	width: 25px;
 	height: 25px;
 	color: #9c9c9c;
+	margin-left: 10px;
 }
 
 .top-button-user {
@@ -199,6 +200,17 @@ a:hover {
 
 .top-button-4:hover {
 	background-color: #e3e3e3;
+}
+
+.orange-dot-top {
+	position: relative;
+	width: 10px;
+	height: 10px;
+	background-color: #f58220;
+	border-radius: 25px;
+	left: -11px;
+	bottom: 12px;
+	margin: 0;
 }
 
 /* left navbar */
@@ -283,10 +295,19 @@ a:hover {
   text-transform: uppercase;
   padding-top: 20px;
   font-weight: 400;
-  margin-bottom: 15px;
+  margin: 0 0 15px 0;
 }
 
-
+.green-dot-left {
+	position: relative;
+	width: 10px;
+	height: 10px;
+	background-color: #04ae00;
+	border-radius: 25px;
+	left: 30px;
+	bottom: 48px;
+	margin: 0;
+}
 
 
 /* header */
@@ -605,18 +626,12 @@ a:hover {
 .table-row:hover .table-icons img {
   position: relative;
   display: inline-block;
-  border-bottom: 1px solid white;
+  border-bottom: none;
   width: 15px;
   height: 15px;
+  text-align: right;
 }
 
-.table-link-icon {
-	margin: 0 10px 0 0;	
-}
-
-.table-trash-icon {
-	
-}
 
 .table-row:hover {
  	background-color: #f1f3f3;
