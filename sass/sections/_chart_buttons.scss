@@ -1,0 +1,65 @@
+.component--table-buttons {
+    background-color: white;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.component--table-buttons-test {
+    width: 100%;
+    height: 120px;
+}
+
+.chart-button1 {
+    width: 100px;
+    padding: 0 0 15px 30px;
+    border-radius: 5px;
+    &:hover {
+        background-color: #f3f3f1;
+    }
+}
+
+.chart-button2 {
+    width: 70px;
+    padding: 0 0 15px 30px;
+    margin: 0 0 0 30px;
+    border-radius: 5px;
+    &:hover {
+        background-color: #f3f3f1;
+    }
+}
+
+.chart-button3 {
+    width: 90px;
+    padding: 0 0 15px 30px;
+    margin: 0 0 0 30px;
+    border-radius: 5px;
+    &:hover {
+        background-color: #f3f3f1;
+    }
+}
+
+.small-dot {
+    position: relative;
+    background-color: #ff9a38;
+    width: 15px;
+    height: 15px;
+    border-radius: 25px;
+    top: 16px;
+    left: -22px;
+}
+
+.chart-button1 { 
+    .small-dot {
+        background-color: #80bfca;
+    }    
+}
+
+.chart-button3 {
+    .small-dot {
+        background-color: #59b66d;
+    }
+}

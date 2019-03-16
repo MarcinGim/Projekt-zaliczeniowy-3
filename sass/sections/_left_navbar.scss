@@ -1,0 +1,98 @@
+.left-navbar {
+    height: 800px;
+    width: 180px;
+    background-color: #191919;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.left-menu-button {
+    text-decoration: none;
+    font-size: 14px;
+    color: #999999;
+    display: block;
+    height: 50px;
+    display: -webkit-flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 15px;
+    border-left: 4px solid #191919;
+    &:hover {
+        border-left: 4px solid #f58220;
+        background-color: #282828;
+        color: #f1f1f1;
+    }
+}
+
+.left-menu-button {
+    img {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+.left-navbar {
+    a {
+        text-decoration: none;
+        color: #8c8c8c;
+        font-weight: 200;
+    }
+}
+
+.left-nav-logo {
+    padding-left: 18px;
+    padding-bottom: 10px;
+}
+
+.hamburger {
+    padding-left: 40px;
+    position: relative;
+    top: -3px;
+}
+
+.sidebar-title {
+    margin-left:10px;
+    color: #8c8c8c;
+}
+
+.left-nav-user {
+  border-top: 1px solid #333333;
+  margin-top: 20px;
+  padding-left: 18px;
+}
+
+.left-nav-user {
+    .user-name-lnb {
+        position: relative;
+        top: -15px;
+        color: #56819f;
+        padding-bottom: 40px;
+        padding-left: 5px;
+    }
+}
+
+.left-nav-user { 
+    h1 {
+        font-size: 14px;
+        color: #999999;
+        text-transform: uppercase;
+        padding-top: 20px;
+        font-weight: 400;
+        margin: 0 0 15px 0;
+    }
+}
+
+.green-dot-left {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background-color: #04ae00;
+    border-radius: 25px;
+    left: 30px;
+    bottom: 48px;
+    margin: 0;
+}

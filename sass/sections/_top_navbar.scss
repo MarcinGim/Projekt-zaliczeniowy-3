@@ -1,0 +1,129 @@
+.component--top-navbar {
+    width: calc(100% - 180px);
+    height: 60px;
+    background-color: white;
+    margin: 0;
+    color: #9c9c9c;
+    text-align: right;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-end;
+    position: fixed;
+    margin-top: -80px;
+}
+
+.top-button-1 {
+    margin: 0;
+    width: 200px;
+    border-left: 1px solid #e3e3e3;
+    border-right: 1px solid #e3e3e3;
+    text-align: center;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        background-color: #e3e3e3;
+    }
+}
+
+.top-button-1 {
+    img {
+        width: 17px;
+        height: 17px;
+    }
+    
+    span {
+        color: $page-header-color;
+        font-weight: 400;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    
+    a {
+        color: #9c9c9c;
+        text-decoration: none;
+        margin: 10px;
+    }
+}
+
+.top-button-2 {
+    width: 60px;
+    border-right: 1px solid #e3e3e3;
+    color: #9c9c9c;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        background-color: #e3e3e3;
+    }
+}
+
+.top-button-2 {
+    img {
+        width: 20px;
+        height: 20px;
+        color: #9c9c9c;
+        margin-left: 10px;
+    }    
+}
+
+.top-button-user {
+    text-align: center;
+    width: 210px;
+    border-right: 1px solid #e3e3e3;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        background-color: #e3e3e3;
+    }
+}
+
+.top-button-user {
+    img {
+        width: 20px;
+        height: 20px;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    span {
+        font-weight: 400;
+        margin-left: 10px;
+    }
+        
+}
+
+.top-button-4 {
+    width: 60px;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        background-color: #e3e3e3;
+    }
+}
+
+.top-button-4 {
+    img {
+        width: 20px;
+        height: 20px;
+        color: #9c9c9c;
+    }
+}
+
+.orange-dot-top {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background-color: #f58220;
+    border-radius: 25px;
+    left: -11px;
+    bottom: 12px;
+    margin: 0;
+}

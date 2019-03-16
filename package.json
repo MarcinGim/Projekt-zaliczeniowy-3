@@ -5,11 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    
     "watch": "npm-run-all -p watch:*",
     "watch:browsersync": "browser-sync",
-    "watch:sassprefixer": "onchange -d 100 sass/style.scss -- node-sass --output-style expanded --source-map true -o css sass -- autoprefixer-cli -o css/style.css", 
-
+    "watch:sassprefixer": "onchange -d 100 sass/style.scss -- node-sass --output-style expanded --source-map true -o css sass -- autoprefixer-cli -o css/style.css",
     "build": "npm run build:clean && npm run build:sass && npm run build:autoprefixer",
     "build:clean": "rimraf vendor/*.css",
     "build:sass": "node-sass --output-style compact -o css sass",
@@ -32,5 +30,8 @@
     "node-sass": "^4.11.0",
     "nu-html-checker": "^0.1.0",
     "onchange": "^5.2.0"
+  },
+  "dependencies": {
+    "npm-run-all": "^4.1.5"
   }
 }

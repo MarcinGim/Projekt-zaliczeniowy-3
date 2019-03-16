@@ -1,0 +1,78 @@
+.component--calendar-frame {
+    background-color: white;
+    width: 100%;
+    height: 170px;
+    text-align: center;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.component--calendar-frame { 
+    img {
+        width: 15px;
+        height: 15px;
+        color: #e3e3e3;
+    }
+    
+    span {
+        padding: 0 15px;
+    }
+    
+}
+
+.board-caldendar-date1 {
+    color: #333333;
+    font-weight: 200;
+}
+
+.board-caldendar-date2 {
+    border-left: 1px solid #e3e3e3;
+    color: #333333;
+    font-weight: 200;
+    margin: 0 10px;
+}
+
+.calendar-frame {
+    border: 1px solid #e3e3e3;
+    padding: 15px;
+    border-radius: 5px;
+    &:hover {
+        border: 1px solid #b1b1b1;
+        padding: 15px;
+        border-radius: 5px;
+    }
+}
+
+.component--calendar-frame2 {
+    background-color: white;
+    width: 100%;
+    height: 170px;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.component--calendar-frame3 {
+    background-color: white;
+    width: 100%;
+    height: 170px;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.refresh-calendar {
+    width: 52px;
+    height: 52px;
+    background-color: #f58220;
+    border: 1px solid white; 
+    border-radius: 5px;
+    color: white;  
+    margin-left: 5px;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        background-color: #ffa200;    
+    }
+}

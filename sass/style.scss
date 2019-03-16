@@ -1,14 +1,23 @@
-import "variables";
-import "mixins";
-import "normalize";
-import "layout";
+@import 'variables';
+@import 'mixins';
+@import 'normalize';
+@import 'layout';
 
 /* Components */
-import "components/form_field";
+@import 'components/header1';
+@import 'components/header2';
+@import 'components/table_example';
+@import 'components/button1';
 
 /* Sections */
-import "section/registration_form";
+@import 'sections/top_navbar';
+@import 'sections/left_navbar';
+@import 'sections/calendar_frame';
+@import 'sections/small_table';
+@import 'sections/chart_buttons';
+@import 'sections/large_table';
 
-/* Pages / Views */
-import "pages/registration";
+
+
+
 
