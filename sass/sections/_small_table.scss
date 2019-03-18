@@ -1,5 +1,4 @@
 .component--small-table {
-    width: 100%;
     height: 200px;
     background-color: white;
     display: flex;
@@ -11,20 +10,19 @@
 .component--small-table {
     table {
         border-collapse: collapse;
-        width: 80%;
     }
-}
-
-.component--small-table-test {
-    width: 100%;
-    height: 200px;
 }
 
 .small-table2 { 
     td {
         border-bottom: 1px solid #ccc;
+        margin: 0 20px 0 20px;
     }
 }   
+
+.small-table2 {
+    margin: 0 0 0 130px;
+}
 
 .small-table3 {
     td {
@@ -32,17 +30,29 @@
     }
 }   
 
+.small-table3 {
+    margin: 0 130px 0 0;
+    padding: 0 20px 0 20px;
+}
+
 .small-table-2-1strow {
-    color: $page-header-color;
+    color: #a6a6a6;
     font-weight: 500;
     font-size: 16px;
-    padding: 20px 240px 5px 0;
+    width: 90%;
+    padding: 15px 0 15px 0;
 }   
 
 .small-table-2-2ndrow {
     font-weight: 200;
     font-size: 16px;
     color: #333333;
-    padding: 20px 0 5px 0;
-    border-collapse: collapse;
+}
+
+.cst1 {
+    margin: 0 10px 0 0;    
+}
+
+.cst2 {
+    margin: 0 0 0 10px;    
 }
