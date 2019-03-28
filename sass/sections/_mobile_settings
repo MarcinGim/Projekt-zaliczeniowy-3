@@ -1,6 +1,63 @@
 @media(max-width: 767px) {
-  @include grid('sm');
-}
+  	
+  	@include grid('sm');
+
+  	.component--top-navbar {
+  		display: none;
+  	}
+
+  	.board {
+    	margin: 20px 20px 20px 20px;
+    }
+
+    body {
+    	margin: 0 0 0 50px;
+    }
+
+    .left-navbar {
+    	width: 50px;
+    }
+
+    .left-menu-button {
+
+    	span {
+    		display: none;
+    	}
+    }
+
+    .web-logo {
+    	display: none;
+    }
+
+    .hamburger {
+    	padding: 0;
+    }
+
+    .left-nav-user {
+    	h1 {
+    		display: none;
+    	}
+    	.user-name-lnb {
+    		display: none;
+    	}
+    	img {
+    		position: relative;
+    		top: 20px;
+    		left: -6px;
+    		width: 30px;
+    		height: 30px;
+    	}
+
+    	.green-dot-left {
+    		position: relative;
+    		left: 15px;
+    		top: -13px;
+    	}	
+
+    }
+
+
+}  
 
 @media(min-width: 768px) {
   @include grid('md');

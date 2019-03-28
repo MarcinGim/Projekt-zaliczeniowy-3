@@ -1,5 +1,5 @@
 .left-navbar {
-    height: 800px;
+    height: 100%;
     width: 180px;
     background-color: #191919;
     position: fixed;
@@ -8,6 +8,14 @@
     left: 0;
     overflow-x: hidden;
     padding-top: 20px;
+}
+
+.left-navbar { 
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
 }
 
 .left-menu-button {
@@ -33,11 +41,18 @@
         width: 15px;
         height: 15px;
     }
-}
+
+    a {
+        list-style-type: none;
+        text-decoration: none;
+        line-height: 50px;
+    }
+}    
 
 .left-navbar {
     a {
         text-decoration: none;
+        list-style-type: none;
         color: #8c8c8c;
         font-weight: 200;
     }
@@ -46,6 +61,13 @@
 .left-nav-logo {
     padding-left: 18px;
     padding-bottom: 10px;
+}
+
+.left-nav-logo {
+    a {
+        list-style-type: none;
+        text-decoration: none;   
+    }
 }
 
 .hamburger {
@@ -60,9 +82,9 @@
 }
 
 .left-nav-user {
-  border-top: 1px solid #333333;
-  margin-top: 20px;
-  padding-left: 18px;
+    border-top: 1px solid #333333;
+    margin-top: 20px;
+    padding-left: 18px;
 }
 
 .left-nav-user {
@@ -96,3 +118,4 @@
     bottom: 48px;
     margin: 0;
 }
+
