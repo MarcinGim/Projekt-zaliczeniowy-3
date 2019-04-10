@@ -1,0 +1,65 @@
+.middle {
+	display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin: 40px 0 60px 0;
+    padding-bottom: 40px; 
+}
+
+.form1col {
+	background-color: white;
+	height: 100%;
+}
+
+.name-field {
+	font-size: 16px;
+    font-weight: 500;
+    color: #a6a6a6;    	
+}
+
+label {
+  	padding: 6px 12px 6px 30px;
+  	display: inline-block;
+}
+
+.save-form {
+	padding: 0 0 45px 0;
+}
+
+.second-form {
+	label {
+		padding-left: 0;
+	}
+}
+
+.third-form {
+	label {
+		padding-left: 0;
+	}
+}
+
+.4th-form {
+	label {
+		padding-left: 0;
+	}
+}
+
+.button-form-style {
+	background-color: #f58220;
+    height: 50px;
+    width: 130px;
+    padding: 15px 10px 10px 45px;
+    margin: 0 0 40px 0;
+    color: white;
+    font-size: 18px;
+    font-weight: 200;
+    border-radius: 3px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    &:hover {
+        background-color: #ffa200;
+    }
+}

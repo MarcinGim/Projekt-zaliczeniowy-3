@@ -1,0 +1,20 @@
+.large-table-2 {
+	margin: 80px 0 80px 0;
+	text-align: left;
+	padding: 0 30px; 
+}
+
+.th2-header {
+	padding: 0 0 50px 0;
+}
+
+.lt2-headers {
+	th {
+		color: $page-header-color;
+    	font-weight: 500;
+    	font-size: 16px;
+    	&:hover {
+    		color: black;
+    	}
+	}
+}

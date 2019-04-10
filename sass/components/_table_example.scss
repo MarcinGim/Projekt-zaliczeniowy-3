@@ -12,3 +12,14 @@
     width: 100%;
     height: 300px;
 }
+
+.scroll-wrapper {
+	display: block;
+	width: auto;
+	overflow-x: auto;
+}
+
+.scroll-wrapper .component--table-example {
+  	width: auto;
+  	max-width: 100%;
+}

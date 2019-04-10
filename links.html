@@ -2,13 +2,13 @@
 <html>
 	<head>
 	    <meta charset="UTF-8">
-	    <title>First project</title>
+	    <title>Links</title>
 	    <link rel="stylesheet" reg="text/css" href="css/style.css">
 	    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700" rel="stylesheet">
 	    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
-	<body id="bodyGeneral">
+	<body>
 
 <!-- top navbar -->
 
@@ -40,18 +40,18 @@
 
 <!-- left navbar -->
 
-	<nav class="left-navbar" id="leftnav">
+	<nav class="left-navbar">
      	  
 	    <div class="left-nav-logo">
 		    <a href="index.html" class="web-logo"><img src="https://i.ibb.co/r4ZDYLc/logo.png" alt="logo" border="0"></a>
-		    <a href="#link" class="hamburger" id="hamburger"><img src="https://i.ibb.co/bFkv9Sz/hamburger.png" alt="hamburger" border="0"></a>        
+		    <a href="#link" class="hamburger"><img src="https://i.ibb.co/bFkv9Sz/hamburger.png" alt="hamburger" border="0"></a>        
 		</div>
 	    
 	    <ul> 
 	        <li class="left-menu-button">
 	            <a href="index.html">
 	            <img src="images/icons/general.svg">
-	            <span class="sidebar-title" id="generalButton">General</span>
+	            <span class="sidebar-title">General</span>
 	            </a>
 	        </li>
 	        
@@ -97,41 +97,8 @@
 	            <span class="sidebar-title">Postback</span>
 	            </a>
 	        </li> 
-
-	        <div class="left-menu-disable-elements">
-
-		        <li class="left-menu-button">
-		            <a href="#link">
-		            <img src="images/icons/wallet.svg">
-		            <span class="sidebar-title">$1,500.00</span>
-		            <img class="left-menu-arrow-down" id="leftMenuArrowDown" src="images/icons/arrow-down.svg">
-		            </a>
-		        </li>
 	    
-		        <li class="left-menu-button">
-		            <a href="#link">
-		            <img src="images/icons/notification.svg">
-		            <span class="sidebar-title">Notification</span>
-		            </a>
-		        </li>
-	        
-		        <li class="left-menu-button">
-		            <a href="#link">
-		            <img src="images/icons/profile.svg">
-		            <span class="sidebar-title">User Name</span>
-		            </a>
-		        </li>
-	        
-		        <li class="left-menu-button">
-		            <a href="#link">
-		            <img src="images/icons/quit.svg">
-		            <span class="sidebar-title">Logout</span>
-		            </a>
-		        </li> 
-
-		    </div>    
-	    
-	    </ul>  
+	    </ul> 
 	      
 	    <div class="left-nav-user">
 	       	<h1>Your Manager</h1>
@@ -142,42 +109,6 @@
     	
     </nav>
 
-<!-- js script-->
-
-	<script>
-		
-		'use strict'
-
-		var hamburger = document.getElementById('hamburger');
-
-		var leftNavbar = document.getElementById('leftnav');
-
-		var generalButtonVisible = document.getElementById('generalButton');
-
-		var leftMenuWalletArrowDown = document.getElementById('leftMenuArrowDown');		
-
-		var container = document.getElementById('bodyGeneral');
-
-		
-
-		hamburger.addEventListener('click', function(){	leftNavbar.classList.toggle('left-nav-width');
-		});
-		
-		hamburger.addEventListener('click', function(){	generalButtonVisible.classList.toggle('left-nav-span-visible');
-		});
-
-		hamburger.addEventListener('click', function(){	leftMenuWalletArrowDown.classList.toggle('left-menu-arrow-visible');
-		});	
-
-		hamburger.addEventListener('click', function(){	container.classList.toggle('body-when-mobile-menu-open');
-		});
-
-		
-		console.log(hamburger.addEventListener)
-
-
-	</script>
-
 <!-- container1 -->
 
     <section class="container">
@@ -186,162 +117,32 @@
 <!-- header -->
 
 		<div class="component--header-1">
-			<h1>General statistic</h1>	
+			<h1>Links</h1>	
 		</div>
 
-<!-- calendar -->
-
-		<div class="row">
-			
-			<div class="component--calendar-frame">
-				<div class="calendar-frame"> 
-					<span class="board-caldendar-date1">16.05.2016</span>
-			        <span class="board-caldendar-date2">16.05.2016</span>  
-			        <a href="#text"><img src="images/icons/calendar.svg"></a>
-			    </div>
-
-			    <div class="refresh-calendar">
-			        <a href="#text"><img src="images/icons/refresh.svg"></a>
-			    </div>
-		    </div>
-		
-		</div>		
-
-<!-- small table -->
+<!-- button -->
 
 		<div class="row">
 
-			<div class="col-6 col-sm-12">
-				<div class="component--small-table cst1">	
-					<table class="small-table2">
-		          		<tr>
-				            <td class="small-table-2-1strow">Visit singups</td>
-				            <td class="small-table-2-2ndrow">124</td>
-		         		</tr>
-		          		<tr>
-				            <td class="small-table-2-1strow">Visit singups</td>
-				            <td class="small-table-2-2ndrow">124</td>
-		          		</tr>  
-		      		</table>
-		      	</div>	
+			<div class="col-5">
+				<div class="component--button1-test"></div>
 			</div>
 
-			<div class="col-6 col-sm-12">
-				<div class="component--small-table cst2">
-					<table class="small-table3">  
-				        <tr>
-				            <td class="small-table-2-1strow">Visit singups</td>
-				            <td class="small-table-2-2ndrow">124</td>
-				        </tr>
-				        <tr>
-				            <td class="small-table-2-1strow">Visit singups</td>
-				            <td class="small-table-2-2ndrow">124</td>
-				        </tr>
-					</table>
-				</div>	
+			<div class="col-2">
+				<div class="component--button1">
+      				<div class="button1-style">+ Add new</div>
+				</div>
 			</div>
 
-		</div>
-
-<!-- small header -->
-
-		<div class="component--small-header">
-			<h2>Earnings chart</h2>
-		</div>
-
-<!-- 3 buttons -->
-
-		<div class="row">
-
-			<div class="col-3">
-				<div class="component--table-buttons-test"></div>
-			</div>	
-
-			<div class="col-6">
-				<div class="component--table-buttons">
-					<div class="chart-button1">
-	            		<div class="small-dot"></div>
-	            		Signups
-	          		</div>
-	          		<div class="chart-button2">
-	            		<div class="small-dot"></div>
-	            		FTD
-	            	</div>
-	          		<div class="chart-button3">
-	            		<div class="small-dot"></div>
-	            		Earned
-	            	</div>
-				</div>
-			</div>	
-
-			<div class="col-3">
-				<div class="component--table-buttons-test"></div>
+			<div class="col-5">
+				<div class="component--button1-test"></div>
 			</div>
 
-		</div>
-
-<!-- chart -->
-
-
-		
-			<div class="row">
-
-				<div class="col-2">
-					<div class="component--table-example-test"></div>
-				</div>
-
-				<div class="col-8">
-					<div class="scroll-wrapper">
-						<div class="component--table-example">
-							<img src="images/graph1.png">
-						</div>
-					</div>	
-				</div>
-
-				<div class="col-2">
-					<div class="component--table-example-test"></div>
-				</div>		
-			
-			</div>
-    	
-
-    	</div>
-	</section>
-
-<!-- container2 -->
-
-    <section class="container">
-    	<div class="board2" id="board2id">
-
-<!-- header1 -->
-
-			<div class="component--header-1">
-				<h1>Links</h1>	
-			</div>	
-
-<!-- button1 -->
-
-			<div class="row">
-
-				<div class="col-5">
-					<div class="component--button1-test"></div>
-				</div>
-
-				<div class="col-2">
-					<div class="component--button1">
-	      				<div class="button1-style">+ Add new</div>
-					</div>
-				</div>
-
-				<div class="col-5">
-					<div class="component--button1-test"></div>
-				</div>
-
-			</div>
+		</div>    		
 
 <!-- large table -->
 
-			<div class="row">
+		<div class="row">
 
 				<div class="col-2">
 					<div class="component--large-table-test"></div>
@@ -455,17 +256,27 @@
 					<div class="component--large-table-test"></div>
 				</div>
 			</div>
-    
-<!-- button1 -->	
 
-				<div class="component--button1-example">
-	      			<div class="button1-style">+ Add new</div>
+<!-- button -->
+
+		<div class="row">
+
+			<div class="col-5">
+				<div class="component--button1-test"></div>
+			</div>
+
+			<div class="col-2">
+				<div class="component--button1">
+      				<div class="button1-style">+ Add new</div>
 				</div>
+			</div>
 
-    	</div>
-    </section>	
-	
+			<div class="col-5">
+				<div class="component--button1-test"></div>
+			</div>
 
-	</body>
+		</div> 			
 
 
+		</div>	
+    </section>

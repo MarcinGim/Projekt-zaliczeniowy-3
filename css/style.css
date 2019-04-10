@@ -524,18 +524,14 @@ a:hover {
 
 .component--small-header {
   background-color: white;
-  width: 100%;
+  width: 150px;
   height: 100px;
   display: flex;
   display: -webkit-flex;
   justify-content: flex-start;
   align-items: center;
   margin: 0 auto;
-}
-
-.component--small-header-test {
-  width: 100%;
-  height: 100px;
+  margin-left: 160px;
 }
 
 .component--table-example {
@@ -551,6 +547,17 @@ a:hover {
 .component--table-example-test {
   width: 100%;
   height: 300px;
+}
+
+.scroll-wrapper {
+  display: block;
+  width: auto;
+  overflow-x: auto;
+}
+
+.scroll-wrapper .component--table-example {
+  width: auto;
+  max-width: 100%;
 }
 
 .component--button1-example {
@@ -579,11 +586,9 @@ a:hover {
   font-weight: 200;
   border-radius: 3px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-.button1-style:hover :hover {
+.button1-style:hover {
   background-color: #ffa200;
 }
 
@@ -789,7 +794,7 @@ a:hover {
 }
 
 .hamburger {
-  padding-left: 40px;
+  padding-left: 30px;
   position: relative;
   top: -3px;
 }
@@ -831,6 +836,25 @@ a:hover {
   left: 30px;
   bottom: 48px;
   margin: 0;
+}
+
+.left-menu-arrow-down {
+  margin-left: 35px;
+}
+
+.orange-dot-left {
+  position: relative;
+  width: 5px;
+  height: 5px;
+  background-color: #f58220;
+  border-radius: 25px;
+  left: -5px;
+  bottom: 10px;
+  margin: 0;
+}
+
+.left-menu-disable-elements {
+  display: none;
 }
 
 .component--calendar-frame {
@@ -879,20 +903,6 @@ a:hover {
   border-radius: 5px;
 }
 
-.component--calendar-frame2 {
-  background-color: white;
-  width: 100%;
-  height: 170px;
-  border-bottom: 1px solid #e3e3e3;
-}
-
-.component--calendar-frame3 {
-  background-color: white;
-  width: 100%;
-  height: 170px;
-  border-bottom: 1px solid #e3e3e3;
-}
-
 .refresh-calendar {
   width: 52px;
   height: 52px;
@@ -930,7 +940,7 @@ a:hover {
 }
 
 .small-table2 {
-  margin: 0 0 0 130px;
+  margin: 0 0 0 70px;
 }
 
 .small-table3 td {
@@ -938,7 +948,7 @@ a:hover {
 }
 
 .small-table3 {
-  margin: 0 130px 0 0;
+  margin: 0 70px 0 0;
   padding: 0 20px 0 20px;
 }
 
@@ -1031,7 +1041,7 @@ a:hover {
 
 .component--large-table {
   width: 100%;
-  height: 600px;
+  height: 100%;
   background-color: white;
   display: flex;
   display: -webkit-flex;
@@ -1041,11 +1051,11 @@ a:hover {
 
 .component--large-table-test {
   width: 100%;
-  height: 600px;
+  height: 20px;
 }
 
 .component--large-table table {
-  width: 80%;
+  width: 100%;
   border-collapse: collapse;
 }
 
@@ -1058,15 +1068,21 @@ a:hover {
   color: #a6a6a6;
   font-weight: 500;
   font-size: 16px;
-  padding: 15px 20px;
+  padding: 20px 20px;
 }
 
 .table-icons img {
   display: none;
 }
 
+.table-href {
+  width: 100%;
+}
+
 .table-icons {
-  width: 80px;
+  width: 100px;
+  margin: 0 0 0 30px;
+  padding: 0 30px 0 30px;
 }
 
 .table-row:hover .table-icons img {
@@ -1080,6 +1096,17 @@ a:hover {
 
 .table-row:hover {
   background-color: #f1f3f3;
+}
+
+.scroll-wrapper {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.scroll-wrapper table {
+  width: 100%;
+  max-width: 100%;
 }
 
 @media (max-width: 767px) {
@@ -1143,7 +1170,7 @@ a:hover {
   .left-navbar {
     width: 50px;
   }
-  .left-menu-button span {
+  .left-menu-button .sidebar-title {
     display: none;
   }
   .web-logo {
@@ -1151,6 +1178,10 @@ a:hover {
   }
   .hamburger {
     padding: 0;
+  }
+  .left-nav-width {
+    width: 180px;
+    transition: all .2s ease-in-out;
   }
   .left-nav-user h1 {
     display: none;
@@ -1169,6 +1200,32 @@ a:hover {
     position: relative;
     left: 15px;
     top: -13px;
+  }
+  .left-nav-backgr {
+    background-color: blue;
+  }
+  .left-nav-span-visible {
+    display: inline;
+  }
+  .component--small-header {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .left-menu-disable-elements {
+    display: inline;
+  }
+  .left-menu-arrow-down {
+    display: none;
+  }
+  .left-menu-arrow-visible {
+    display: inline;
+  }
+  .body-when-mobile-menu-open {
+    margin: 0 0 0 180px;
+    transition: all .2s ease-in-out;
   }
 }
 
@@ -1223,7 +1280,7 @@ a:hover {
   }
 }
 
-@media (min-width: 992px) {
+@media (max-width: 992px) {
   .col-lg-1 {
     flex: 0 0 8.33333%;
     max-width: 8.33333%;
@@ -1323,6 +1380,130 @@ a:hover {
     flex: 0 0 100%;
     max-width: 100%;
   }
+}
+
+.middle {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  margin: 40px 0 60px 0;
+  padding-bottom: 40px;
+}
+
+.form1col {
+  background-color: white;
+  height: 100%;
+}
+
+.name-field {
+  font-size: 16px;
+  font-weight: 500;
+  color: #a6a6a6;
+}
+
+label {
+  padding: 6px 12px 6px 30px;
+  display: inline-block;
+}
+
+.save-form {
+  padding: 0 0 45px 0;
+}
+
+.second-form label {
+  padding-left: 0;
+}
+
+.third-form label {
+  padding-left: 0;
+}
+
+.4th-form label {
+  padding-left: 0;
+}
+
+.button-form-style {
+  background-color: #f58220;
+  height: 50px;
+  width: 130px;
+  padding: 15px 10px 10px 45px;
+  margin: 0 0 40px 0;
+  color: white;
+  font-size: 18px;
+  font-weight: 200;
+  border-radius: 3px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-form-style:hover {
+  background-color: #ffa200;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  padding: 30px;
+  display: none;
+}
+
+.overlay.show {
+  display: flex;
+}
+
+.modal {
+  max-width: 600px;
+  margin: auto;
+  background-color: #ffffff;
+  position: relative;
+  padding: 30px;
+  display: none;
+}
+
+.modal.show {
+  display: block;
+}
+
+.modal .btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 10px;
+}
+
+.large-table-2 {
+  margin: 80px 0 80px 0;
+  text-align: left;
+  padding: 0 30px;
+}
+
+.th2-header {
+  padding: 0 0 50px 0;
+}
+
+.lt2-headers th {
+  color: #a6a6a6;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.lt2-headers th:hover {
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */

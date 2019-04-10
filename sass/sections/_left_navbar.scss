@@ -71,7 +71,7 @@
 }
 
 .hamburger {
-    padding-left: 40px;
+    padding-left: 30px;
     position: relative;
     top: -3px;
 }
@@ -119,3 +119,21 @@
     margin: 0;
 }
 
+.left-menu-arrow-down {
+    margin-left: 35px;
+}
+
+.orange-dot-left {
+    position: relative;
+    width: 5px;
+    height: 5px;
+    background-color: #f58220;
+    border-radius: 25px;
+    left: -5px;
+    bottom: 10px;
+    margin: 0;
+}
+
+.left-menu-disable-elements {
+    display: none;
+}
