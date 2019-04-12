@@ -26,17 +26,111 @@
                 <div class="orange-dot-top"></div>
           	</li>
 		      
-          	<li class="top-button-user">
+          	<li class="top-button-user" id="loginBtn">
                 <a href="#text"><img src="images/icons/profile.svg"></a>
                 <a href="#text"><span>Leonardo Di Caprio</span></a>
           	</li>
             
-          	<li class="top-button-4">  
+          	<li class="top-button-4" id="myBtn">  
               	<a href="#text"><img src="images/icons/quit.svg"></a>
           	</li>
         
     	</ul>	
   	</nav>
+
+<!-- quit modal -->
+
+	<div id="myModal" class="modal">
+		<div class="modal-content">
+			<div class="component--header-1">
+					
+				<h1>Do you really want to quit?</h1>
+			</div>
+			<div class="quit-modal-buttons">	
+				<div class="cancel-button close">Cancel</div>	
+				<div class="quit-button">Quit</div>
+			</div>	    
+		</div>
+	</div>
+
+	<script>
+
+	'use strict'
+
+		var modal = document.getElementById('myModal');
+
+		var btn = document.getElementById("myBtn");
+
+		var span = document.getElementsByClassName("close")[0];
+
+		btn.onclick = function() {
+	  	modal.style.display = "block";
+		}	
+
+		span.onclick = function() {
+	  	modal.style.display = "none";
+		}	
+
+
+		window.onclick = function(event) {
+	  	if (event.target == modal) {
+	    modal.style.display = "none";
+	  		}
+		}
+
+	</script>	  	
+
+<!-- login modal -->
+
+		<div id="myModal2" class="modal2">
+			<div class="modal-content2">
+		    	<span class="close2">&times;</span>
+		    	<div class="component--header-1">	
+					<h1>login</h1>
+				</div>
+				<div class="login-modal-options">
+					<div class="type-login-frame">
+						<img src="images/icons/login.svg">
+						<span>login name</span>
+					</div>
+					<div class="type-password-frame">
+						<img src="images/icons/password.svg">
+						<span>password</span>
+					</div>
+					<div class="enter-button-frame">
+						<span>Enter</span>	
+					</div>	
+				</div>
+
+		  	</div>
+		</div>
+
+	<script>
+
+	'use strict'
+
+		var modal2 = document.getElementById('myModal2');
+
+		var btn2 = document.getElementById("loginBtn");
+
+		var span2 = document.getElementsByClassName("close2")[0];
+
+		btn2.onclick = function() {
+	  	modal2.style.display = "block";
+		}	
+
+		span2.onclick = function() {
+	  	modal2.style.display = "none";
+		}	
+
+
+		window.onclick = function(event) {
+	  	if (event.target == modal2) {
+	    modal2.style.display = "none";
+	  		}
+		}
+
+	</script>
 
 <!-- left navbar -->
 
@@ -56,7 +150,7 @@
 	        </li>
 	        
           	<li class="left-menu-button">
-	            <a href="#link">
+	            <a href="detail.html">
 	            <img src="images/icons/details.svg">
 	            <span class="sidebar-title">Details</span>
 	            </a>
@@ -85,7 +179,7 @@
 	        </li>
         
 	        <li class="left-menu-button">
-	            <a href="#link">
+	            <a href="payout.html">
 	            <img src="images/icons/payout.svg">
 	            <span class="sidebar-title">Payout</span>
 	            </a>
@@ -104,7 +198,6 @@
 		            <a href="#link">
 		            <img src="images/icons/wallet.svg">
 		            <span class="sidebar-title">$1,500.00</span>
-		            <img class="left-menu-arrow-down" id="leftMenuArrowDown" src="images/icons/arrow-down.svg">
 		            </a>
 		        </li>
 	    
@@ -122,7 +215,7 @@
 		            </a>
 		        </li>
 	        
-		        <li class="left-menu-button">
+		        <li class="left-menu-button" id="myBtnMobile">
 		            <a href="#link">
 		            <img src="images/icons/quit.svg">
 		            <span class="sidebar-title">Logout</span>
@@ -142,7 +235,7 @@
     	
     </nav>
 
-<!-- js script-->
+<!-- js mobile menu script-->
 
 	<script>
 		
@@ -152,31 +245,46 @@
 
 		var leftNavbar = document.getElementById('leftnav');
 
-		var generalButtonVisible = document.getElementById('generalButton');
-
-		var leftMenuWalletArrowDown = document.getElementById('leftMenuArrowDown');		
-
-		var container = document.getElementById('bodyGeneral');
-
-		
+		var container = document.getElementById('bodyGeneral');	
 
 		hamburger.addEventListener('click', function(){	leftNavbar.classList.toggle('left-nav-width');
 		});
 		
-		hamburger.addEventListener('click', function(){	generalButtonVisible.classList.toggle('left-nav-span-visible');
-		});
-
-		hamburger.addEventListener('click', function(){	leftMenuWalletArrowDown.classList.toggle('left-menu-arrow-visible');
-		});	
-
 		hamburger.addEventListener('click', function(){	container.classList.toggle('body-when-mobile-menu-open');
 		});
-
 		
 		console.log(hamburger.addEventListener)
 
-
 	</script>
+
+<!-- logout button when mobile -->
+
+	<script>
+
+	'use strict'
+
+		var modal = document.getElementById('myModal');
+
+		var btn = document.getElementById("myBtnMobile");
+
+		var span = document.getElementsByClassName("close")[0];
+
+		btn.onclick = function() {
+	  	modal.style.display = "block";
+		}	
+
+		span.onclick = function() {
+	  	modal.style.display = "none";
+		}	
+
+
+		window.onclick = function(event) {
+	  	if (event.target == modal) {
+	    modal.style.display = "none";
+	  		}
+		}
+
+	</script>	
 
 <!-- container1 -->
 

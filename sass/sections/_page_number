@@ -1,0 +1,31 @@
+.page-numbers {
+	display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 20px 0;
+}
+
+.page-numbers {
+	img {
+		height: 15px;
+		width: 15px;
+	}
+}
+
+.page-number {
+	font-size: 16px;
+	margin: 5px 20px;
+	color: #7495ae;
+	font-weight: 300;
+	&:hover {
+		color: #f7a064;	
+	}
+}
+
+.page-number-bg {
+	padding: 10px 15px;
+	border-radius: 5px;
+	background-color: #f1f3f3;
+	margin: 10px 10px;
+}

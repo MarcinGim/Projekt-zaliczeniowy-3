@@ -31,7 +31,7 @@
 	  <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
 	</ol>
 
-<!-- top navbar -->
+
 
 	<nav class="component--top-navbar">
       
@@ -51,11 +51,13 @@
 	      	<a href="#text"><span>Leonardo Di Caprio</span></a>
 	    </div>
 	      
-	    <div class="top-button-4">
+	    <div class="top-button-4" id="myBtn">
 	        <a href="#text"><img src="images/icons/quit.svg"></a>
 	    </div>
         
   	</nav>  
+
+
 
 <!-- left navbar -->
 
@@ -477,10 +479,26 @@
 			<div class="scroll-wrapper">
 				<table>
 					<tr class="lt2-headers">
-						<th>Date</th>
-						<th>Amount ($)</th>
-						<th>Deal</th>
-						<th>Account</th>	
+						<th>
+							<div class="lt2-headers-background">Date
+								<img src="images/icons/arrow-up.svg">
+							</div>
+						</th>
+						<th>
+							<div class="lt2-headers-background">Amount ($)
+								<img src="images/icons/arrow-up.svg">
+							</div>
+						</th>
+						<th>
+							<div class="lt2-headers-background">Deal
+								<img src="images/icons/arrow-up.svg">	
+							</div>
+						</th>
+						<th>
+							<div class="lt2-headers-background">Account
+								<img src="images/icons/arrow-up.svg">	
+							</div>
+						</th>	
 					</tr>
 					<tr class="lt2-rows">
 						<td>16/08/19 (15:42)</td>
@@ -524,7 +542,7 @@
 						<td>cpl (200)</td>
 						<td>bank</td>
 					</tr>
-					<trclass="lt2-rows">
+					<tr class="lt2-rows">
 						<td>16/08/19 (15:42)</td>
 						<td>30,426 00</td>
 						<td>cpl (200)</td>
@@ -533,6 +551,68 @@
 				</table>
 			</div>	
 		</div>	
+
+<!-- page-numbers -->
+
+<br><br><br><br>
+
+		<div class="page-numbers">
+			<img src="images/icons/arrow-left.svg">
+			<span class="page-number page-number-bg">1</span>
+			<span class="page-number">2</span>
+			<span class="page-number">3</span>
+			<span class="page-number">4</span>
+			<span class="page-number">5</span>
+			<span class="page-number">6</span>
+			<span class="page-number">7</span>
+			<span class="page-number">8</span>
+			<img src="images/icons/arrow-right.svg">		
+		</div>
+
+<!-- logout modeal -->
+
+
+
+
+			<div id="myModal" class="modal">
+				<div class="modal-content">
+		    		<span class="close">&times;</span>
+		    		<p>Some text in the Modal..</p>
+		  		</div>
+			</div>
+
+
+
+
+<!-- logout modal js -->
+
+<script>
+
+	'use strict'
+
+	var modal = document.getElementById('myModal');
+
+	var btn = document.getElementById("myBtn");
+
+	var span = document.getElementsByClassName("close")[0];
+
+	btn.onclick = function() {
+  	modal.style.display = "block";
+	}	
+
+	span.onclick = function() {
+  	modal.style.display = "none";
+	}	
+
+
+	window.onclick = function(event) {
+  	if (event.target == modal) {
+    modal.style.display = "none";
+  		}
+	}
+
+</script>
+
 
 
   </body>

@@ -19,9 +19,8 @@
     }
 
     .left-menu-button {
-
         .sidebar-title {
-    		display: none;
+    		position: absolute;
     	}
     }
 
@@ -43,7 +42,9 @@
     		display: none;
     	}
     	.user-name-lnb {
-    		display: none;
+    		position: absolute;
+            top: 650px;
+            left: 50px;
     	}
     	img {
     		position: relative;
@@ -58,7 +59,6 @@
     		left: 15px;
     		top: -13px;
     	}	
-
     }
 
     .left-nav-backgr {
@@ -81,11 +81,7 @@
         display: inline;
     }
 
-    .left-menu-arrow-down {
-        display: none;
-    }
-
-    .left-menu-arrow-visible {
+    .your-manager-header-visible {
         display: inline;
     }
 
@@ -93,6 +89,7 @@
         margin: 0 0 0 180px;
         transition: all .2s ease-in-out;
     }
+
 
 } 
 
