@@ -1,475 +1,406 @@
 <!DOCTYPE html>
 <html>
-	<head>
-	    <meta charset="UTF-8">
-	    <title>First project</title>
-	    <link rel="stylesheet" reg="text/css" href="css/style.css">
-	    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700" rel="stylesheet">
-	    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-	</head>
-	<body id="bodyGeneral">
-
-<!-- top navbar -->
-
-	<nav class="component--top-navbar"> 
-      	<ul>
-          
-          	<li class="top-button-1">  
-                <a href="#text"><img src="images/icons/wallet.svg"></a>
-                <a href="#text"><span>$1,500.00</span></a>
-                <a href="#text"><img src="images/icons/arrow-down.svg"></a>
-          	</li>
-          
-          	<li class="top-button-2">
-                <a href="#link"><img src="images/icons/notification.svg"></a>
-                <div class="orange-dot-top"></div>
-          	</li>
-		      
-          	<li class="top-button-user" id="loginBtn">
-                <a href="#text"><img src="images/icons/profile.svg"></a>
-                <a href="#text"><span>Leonardo Di Caprio</span></a>
-          	</li>
-            
-          	<li class="top-button-4" id="myBtn">  
-              	<a href="#text"><img src="images/icons/quit.svg"></a>
-          	</li>
-        
-    	</ul>	
-  	</nav>
-
-<!-- quit modal -->
-
-	<div id="myModal" class="modal">
-		<div class="modal-content">
-			<div class="component--header-1">
-					
-				<h1>Do you really want to quit?</h1>
-			</div>
-			<div class="quit-modal-buttons">	
-				<div class="cancel-button close">Cancel</div>	
-				<div class="quit-button">Quit</div>
-			</div>	    
-		</div>
-	</div> 	
-
-<!-- login modal -->
-
-		<div id="myModal2" class="modal2">
-			<div class="modal-content2">
-		    	<span class="close2">&times;</span>
-		    	<div class="component--header-1">	
-					<h1>login</h1>
-				</div>
-				<div class="login-modal-options">
-					<div class="type-login-frame">
-						<img src="images/icons/login.svg">
-						<span>login name</span>
-					</div>
-					<div class="type-password-frame">
-						<img src="images/icons/password.svg">
-						<span>password</span>
-					</div>
-					<div class="enter-button-frame">
-						<span>Enter</span>	
-					</div>	
-				</div>
-
-		  	</div>
-		</div>
-
-<!-- left navbar -->
-
-	<nav class="left-navbar" id="leftnav">
-     	  
-	    <div class="left-nav-logo">
-		    <a href="index.html" class="web-logo"><img src="https://i.ibb.co/r4ZDYLc/logo.png" alt="logo" border="0"></a>
-		    <a href="#link" class="hamburger" id="hamburger"><img src="https://i.ibb.co/bFkv9Sz/hamburger.png" alt="hamburger" border="0"></a>        
-		</div>
-	    
-	    <ul> 
-	        <li class="left-menu-button">
-	            <a href="index.html">
-	            <img src="images/icons/general.svg">
-	            <span class="sidebar-title" id="generalButton">General</span>
-	            </a>
-	        </li>
-	        
-          	<li class="left-menu-button">
-	            <a href="detail.html">
-	            <img src="images/icons/details.svg">
-	            <span class="sidebar-title">Details</span>
-	            </a>
-	        </li>
-        
-        
-	        <li class="left-menu-button">
-	            <a href="links.html">
-	            <img src="images/icons/links.svg">
-	            <span class="sidebar-title">Links</span>
-	            </a>
-	        </li>
-        
-	        <li class="left-menu-button">
-	            <a href="banners.html">
-	            <img src="images/icons/banners.svg">
-	            <span class="sidebar-title">Banners</span>
-	            </a>
-	        </li>
+   <head>
+      <meta charset="UTF-8">
+      <title>First project</title>
+      <link rel="stylesheet" reg="text/css" href="css/style.css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+   <body id="bodyGeneral">
+      
+      <!-- top navbar -->
+      
+      <nav class="component--top-navbar">
+         <ul>
+            <li class="top-button-1">  
+               <a href="#text"><img src="images/icons/wallet.svg"></a>
+               <a href="#text"><span>$1,500.00</span></a>
+               <a href="#text"><img src="images/icons/arrow-down.svg"></a>
+            </li>
+            <li class="top-button-2">
+               <a href="#link"><img src="images/icons/notification.svg"></a>
+               <div class="orange-dot-top"></div>
+            </li>
+            <li class="top-button-user" id="loginBtn">
+               <a href="#text"><img src="images/icons/profile.svg"></a>
+               <a href="#text"><span>Leonardo Di Caprio</span></a>
+            </li>
+            <li class="top-button-4" id="myBtn">  
+               <a href="#text"><img src="images/icons/quit.svg"></a>
+            </li>
+         </ul>
+      </nav>
+      
+      <!-- quit modal -->
+      
+      <div id="myModal" class="modal">
+         <div class="modal-content">
+            <div class="component--header-1">
+               <h1>Do you really want to quit?</h1>
+            </div>
+            <div class="quit-modal-buttons">
+               <div class="cancel-button close">Cancel</div>
+               <div class="quit-button">Quit</div>
+            </div>
+         </div>
+      </div>
+      
+      <!-- login modal -->
+      
+      <div id="myModal2" class="modal2">
+         <div class="modal-content2">
+            <span class="close2">&times;</span>
+            <div class="component--header-1">
+               <h1>login</h1>
+            </div>
+            <div class="login-modal-options">
+               <div class="type-login-frame">
+                  <img src="images/icons/login.svg">
+                  <span>login name</span>
+               </div>
+               <div class="type-password-frame">
+                  <img src="images/icons/password.svg">
+                  <span>password</span>
+               </div>
+               <div class="enter-button-frame">
+                  <span>Enter</span>	
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      <!-- left navbar -->
+      
+      <nav class="left-navbar" id="leftnav">
+         <div class="left-nav-logo">
+            <a href="index.html" class="web-logo"><img src="https://i.ibb.co/r4ZDYLc/logo.png" alt="logo" border="0"></a>
+            <a href="#link" class="hamburger" id="hamburger"><img src="https://i.ibb.co/bFkv9Sz/hamburger.png" alt="hamburger" border="0"></a>        
+         </div>
+         <ul>
+            <li class="left-menu-button">
+               <a href="index.html">
+               <img src="images/icons/general.svg">
+               <span class="sidebar-title" id="generalButton">General</span>
+               </a>
+            </li>
+            <li class="left-menu-button">
+               <a href="detail.html">
+               <img src="images/icons/details.svg">
+               <span class="sidebar-title">Details</span>
+               </a>
+            </li>
+            <li class="left-menu-button">
+               <a href="links.html">
+               <img src="images/icons/links.svg">
+               <span class="sidebar-title">Links</span>
+               </a>
+            </li>
+            <li class="left-menu-button">
+               <a href="banners.html">
+               <img src="images/icons/banners.svg">
+               <span class="sidebar-title">Banners</span>
+               </a>
+            </li>
+            <li class="left-menu-button">
+               <a href="personal_data.html">
+               <img src="images/icons/personaldata.svg">
+               <span class="sidebar-title">Personal data</span>
+               </a>
+            </li>
+            <li class="left-menu-button">
+               <a href="payout.html">
+               <img src="images/icons/payout.svg">
+               <span class="sidebar-title">Payout</span>
+               </a>
+            </li>
+            <li class="left-menu-button">
+               <a href="#link">
+               <img src="images/icons/postback.svg">
+               <span class="sidebar-title">Postback</span>
+               </a>
+            </li>
+            <div class="left-menu-disable-elements">
+               <li class="left-menu-button">
+                  <a href="#link">
+                  <img src="images/icons/wallet.svg">
+                  <span class="sidebar-title">$1,500.00</span>
+                  </a>
+               </li>
+               <li class="left-menu-button">
+                  <a href="#link">
+                  <img src="images/icons/notification.svg">
+                  <span class="sidebar-title">Notification</span>
+                  </a>
+               </li>
+               <li class="left-menu-button">
+                  <a href="#link">
+                  <img src="images/icons/profile.svg">
+                  <span class="sidebar-title">User Name</span>
+                  </a>
+               </li>
+               <li class="left-menu-button" id="myBtnMobile">
+                  <a href="#link">
+                  <img src="images/icons/quit.svg">
+                  <span class="sidebar-title">Logout</span>
+                  </a>
+               </li>
+            </div>
+         </ul>
+         <div class="left-nav-user">
+            <h1>Your Manager</h1>
+            <a href="#link"><img src="https://i.ibb.co/5Gk2fDH/photo.png" alt="photo" border="0"></a>
+            <a href="#link" class="user-name-lnb">Mikhael E.</a>
+            <div class="green-dot-left"></div>
+         </div>
+      </nav>
+      
+      <!-- container1 -->
+      
+      <section class="container">
+         <div class="board">
+      
+            <!-- header -->
+      
+            <div class="component--header-1">
+               <h1>General statistic</h1>
+            </div>
+      
+            <!-- calendar -->
+      
+            <div class="row">
+               <div class="component--calendar-frame">
+                  <div class="calendar-frame"> 
+                     <span class="board-caldendar-date1">16.05.2016</span>
+                     <span class="board-caldendar-date2">16.05.2016</span>  
+                     <a href="#text"><img src="images/icons/calendar.svg"></a>
+                  </div>
+                  <div class="refresh-calendar">
+                     <a href="#text"><img src="images/icons/refresh.svg"></a>
+                  </div>
+               </div>
+            </div>
+      
+            <!-- small table -->
+      
+            <div class="row">
+               <div class="col-6 col-sm-12">
+                  <div class="component--small-table cst1">
+                     <table class="small-table2">
+                        <tr>
+                           <td class="small-table-2-1strow">Visit singups</td>
+                           <td class="small-table-2-2ndrow">124</td>
+                        </tr>
+                        <tr>
+                           <td class="small-table-2-1strow">Visit singups</td>
+                           <td class="small-table-2-2ndrow">124</td>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-12">
+                  <div class="component--small-table cst2">
+                     <table class="small-table3">
+                        <tr>
+                           <td class="small-table-2-1strow">Visit singups</td>
+                           <td class="small-table-2-2ndrow">124</td>
+                        </tr>
+                        <tr>
+                           <td class="small-table-2-1strow">Visit singups</td>
+                           <td class="small-table-2-2ndrow">124</td>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+            </div>
     
-	        <li class="left-menu-button">
-	            <a href="personal_data.html">
-	            <img src="images/icons/personaldata.svg">
-	            <span class="sidebar-title">Personal data</span>
-	            </a>
-	        </li>
-        
-	        <li class="left-menu-button">
-	            <a href="payout.html">
-	            <img src="images/icons/payout.svg">
-	            <span class="sidebar-title">Payout</span>
-	            </a>
-	        </li>
-        
-	        <li class="left-menu-button">
-	            <a href="#link">
-	            <img src="images/icons/postback.svg">
-	            <span class="sidebar-title">Postback</span>
-	            </a>
-	        </li> 
-
-	        <div class="left-menu-disable-elements">
-
-		        <li class="left-menu-button">
-		            <a href="#link">
-		            <img src="images/icons/wallet.svg">
-		            <span class="sidebar-title">$1,500.00</span>
-		            </a>
-		        </li>
-	    
-		        <li class="left-menu-button">
-		            <a href="#link">
-		            <img src="images/icons/notification.svg">
-		            <span class="sidebar-title">Notification</span>
-		            </a>
-		        </li>
-	        
-		        <li class="left-menu-button">
-		            <a href="#link">
-		            <img src="images/icons/profile.svg">
-		            <span class="sidebar-title">User Name</span>
-		            </a>
-		        </li>
-	        
-		        <li class="left-menu-button" id="myBtnMobile">
-		            <a href="#link">
-		            <img src="images/icons/quit.svg">
-		            <span class="sidebar-title">Logout</span>
-		            </a>
-		        </li> 
-
-		    </div>    
-	    
-	    </ul>  
-	      
-	    <div class="left-nav-user">
-	       	<h1>Your Manager</h1>
-	        <a href="#link"><img src="https://i.ibb.co/5Gk2fDH/photo.png" alt="photo" border="0"></a>
-	        <a href="#link" class="user-name-lnb">Mikhael E.</a>
-	        <div class="green-dot-left"></div>
-	    </div>    
-    	
-    </nav>
-
-<!-- container1 -->
-
-    <section class="container">
-    	<div class="board">
-
-<!-- header -->
-
-		<div class="component--header-1">
-			<h1>General statistic</h1>	
-		</div>
-
-<!-- calendar -->
-
-		<div class="row">
-			
-			<div class="component--calendar-frame">
-				<div class="calendar-frame"> 
-					<span class="board-caldendar-date1">16.05.2016</span>
-			        <span class="board-caldendar-date2">16.05.2016</span>  
-			        <a href="#text"><img src="images/icons/calendar.svg"></a>
-			    </div>
-
-			    <div class="refresh-calendar">
-			        <a href="#text"><img src="images/icons/refresh.svg"></a>
-			    </div>
-		    </div>
-		
-		</div>		
-
-<!-- small table -->
-
-		<div class="row">
-
-			<div class="col-6 col-sm-12">
-				<div class="component--small-table cst1">	
-					<table class="small-table2">
-		          		<tr>
-				            <td class="small-table-2-1strow">Visit singups</td>
-				            <td class="small-table-2-2ndrow">124</td>
-		         		</tr>
-		          		<tr>
-				            <td class="small-table-2-1strow">Visit singups</td>
-				            <td class="small-table-2-2ndrow">124</td>
-		          		</tr>  
-		      		</table>
-		      	</div>	
-			</div>
-
-			<div class="col-6 col-sm-12">
-				<div class="component--small-table cst2">
-					<table class="small-table3">  
-				        <tr>
-				            <td class="small-table-2-1strow">Visit singups</td>
-				            <td class="small-table-2-2ndrow">124</td>
-				        </tr>
-				        <tr>
-				            <td class="small-table-2-1strow">Visit singups</td>
-				            <td class="small-table-2-2ndrow">124</td>
-				        </tr>
-					</table>
-				</div>	
-			</div>
-
-		</div>
-
-<!-- small header -->
-
-		<div class="component--small-header">
-			<h2>Earnings chart</h2>
-		</div>
-
-<!-- 3 buttons -->
-
-		<div class="row">
-
-			<div class="col-3">
-				<div class="component--table-buttons-test"></div>
-			</div>	
-
-			<div class="col-6">
-				<div class="component--table-buttons">
-					<div class="chart-button1">
-	            		<div class="small-dot"></div>
-	            		Signups
-	          		</div>
-	          		<div class="chart-button2">
-	            		<div class="small-dot"></div>
-	            		FTD
-	            	</div>
-	          		<div class="chart-button3">
-	            		<div class="small-dot"></div>
-	            		Earned
-	            	</div>
-				</div>
-			</div>	
-
-			<div class="col-3">
-				<div class="component--table-buttons-test"></div>
-			</div>
-
-		</div>
-
-<!-- chart -->
-
-
-		
-			<div class="row">
-
-				<div class="col-2">
-					<div class="component--table-example-test"></div>
-				</div>
-
-				<div class="col-8">
-					<div class="scroll-wrapper">
-						<div class="component--table-example">
-							<img src="images/graph1.png">
-						</div>
-					</div>	
-				</div>
-
-				<div class="col-2">
-					<div class="component--table-example-test"></div>
-				</div>		
-			
-			</div>
-    	
-
-    	</div>
-	</section>
-
-<!-- container2 -->
-
-    <section class="container">
-    	<div class="board2" id="board2id">
-
-<!-- header1 -->
-
-			<div class="component--header-1">
-				<h1>Links</h1>	
-			</div>	
-
-<!-- button1 -->
-
-			<div class="row">
-
-				<div class="col-5">
-					<div class="component--button1-test"></div>
-				</div>
-
-				<div class="col-2">
-					<div class="component--button1">
-	      				<div class="button1-style">+ Add new</div>
-					</div>
-				</div>
-
-				<div class="col-5">
-					<div class="component--button1-test"></div>
-				</div>
-
-			</div>
-
-<!-- large table -->
-
-			<div class="row">
-
-				<div class="col-2">
-					<div class="component--large-table-test"></div>
-				</div>
-
-				<div class="col-8">
-					<div class="component--large-table">
-						
-						<div class="scroll-wrapper">	
-
-							<table class="main-table">
-			      
-							      <tr class="table-row">
-							        <td class="table-1st-row">Home page</td>
-							        <td><a href="http://www.homepage.com" class="table-href">http://www.homepage.com</a></td>
-							        <td class="table-icons">
-							          <img src="images/icons/links.svg" class="table-link-icon">
-							          <img src="images/icons/trash.svg" class="table-trash-icon">
-							        </td>
-							      </tr>
-							      
-							      <tr class="table-row">
-							        <td class="table-1st-row">Currently offer</td>
-							        <td><a href="http://www.currently.com" class="table-href">http://www.currently.com</a></td>
-							        <td class="table-icons">
-							          <img src="images/icons/links.svg" class="table-link-icon">
-							          <img src="images/icons/trash.svg" class="table-trash-icon">
-							        </td>
-							      </tr>
-
-							      <tr class="table-row">
-							        <td class="table-1st-row">Blurpix</td>
-							        <td><a href="http://www.blurpix.com" class="table-href">http://www.blurpix.com</a></td>
-							        <td class="table-icons">
-							          <img src="images/icons/links.svg" class="table-link-icon">
-							          <img src="images/icons/trash.svg" class="table-trash-icon">
-							        </td>
-							      </tr>
-
-							      <tr class="table-row">
-							        <td class="table-1st-row">Your Site</td>
-							        <td><a href="http://www.yoursite.com" class="table-href">http://www.yoursite.com</a></td>
-							        <td class="table-icons">
-							          <img src="images/icons/links.svg" class="table-link-icon">
-							          <img src="images/icons/trash.svg" class="table-trash-icon">
-							        </td>
-							      </tr>
-
-							      <tr class="table-row">
-							        <td class="table-1st-row">Google</td>
-							        <td><a href="http://www.google.com" class="table-href">http://www.google.com</a></td>
-							        <td class="table-icons">
-							          <img src="images/icons/links.svg" class="table-link-icon">
-							          <img src="images/icons/trash.svg" class="table-trash-icon">
-							        </td>
-							      </tr>
-
-							      <tr class="table-row">
-							        <td class="table-1st-row">Facebook</td>
-							        <td><a href="http://www.facebook.com" class="table-href">http://www.facebook.com</a></td>
-							        <td class="table-icons">
-							          <img src="images/icons/links.svg" class="table-link-icon">
-							          <img src="images/icons/trash.svg" class="table-trash-icon">
-							        </td>
-							      </tr>
-
-							      <tr class="table-row">
-							        <td class="table-1st-row">Dashboard</td>
-							        <td><a href="http://www.dashboard.com" class="table-href">http://www.dashboard.com</a></td>
-							        <td class="table-icons">
-							          <img src="images/icons/links.svg" class="table-link-icon">
-							          <img src="images/icons/trash.svg" class="table-trash-icon">
-							        </td>
-							      </tr>
-
-							      <tr class="table-row">
-							        <td class="table-1st-row">Blurax</td>
-							        <td><a href="http://www.blurax.com" class="table-href">http://www.blurax.com</a></td>
-							        <td class="table-icons">
-							          <img src="images/icons/links.svg" class="table-link-icon">
-							          <img src="images/icons/trash.svg" class="table-trash-icon">
-							        </td>
-							      </tr>
-
-							      <tr class="table-row">
-							        <td class="table-1st-row">Piece of wine</td>
-							        <td><a href="http://www.pieceofwine.com" class="table-href">http://www.pieceofwine.com</a></td>
-							        <td class="table-icons">
-							          <img src="images/icons/links.svg" class="table-link-icon">
-							          <img src="images/icons/trash.svg" class="table-trash-icon">
-							        </td>
-							      </tr>
-
-							      <tr class="table-row">
-							        <td class="table-1st-row">Twitter</td>
-							        <td><a href="http://www.twitter.com" class="table-href">http://www.twitter.com</a></td>
-							        <td class="table-icons">	
-									    <img src="images/icons/links.svg" class="table-link-icon">
-									    <img src="images/icons/trash.svg" class="table-trash-icon">
-							        </td>
-							      </tr>
-
-							</table>
-
-						</div>		
-
-					</div>
-				</div>
-
-				<div class="col-2">
-					<div class="component--large-table-test"></div>
-				</div>
-			</div>
+            <!-- small header -->
     
-<!-- button1 -->	
-
-				<div class="component--button1-example">
-	      			<div class="button1-style">+ Add new</div>
-				</div>
-
-    	</div>
-    </section>	
-	
-	<script src="js/script.js"></script>
-
-	</body>
-
-
+            <div class="component--small-header">
+               <h2>Earnings chart</h2>
+            </div>
+    
+            <!-- 3 buttons -->
+    
+            <div class="row">
+               <div class="col-3">
+                  <div class="component--table-buttons-test"></div>
+               </div>
+               <div class="col-6">
+                  <div class="component--table-buttons">
+                     <div class="chart-button1">
+                        <div class="small-dot"></div>
+                        Signups
+                     </div>
+                     <div class="chart-button2">
+                        <div class="small-dot"></div>
+                        FTD
+                     </div>
+                     <div class="chart-button3">
+                        <div class="small-dot"></div>
+                        Earned
+                     </div>
+                  </div>
+               </div>
+               <div class="col-3">
+                  <div class="component--table-buttons-test"></div>
+               </div>
+            </div>
+    
+            <!-- chart -->
+    
+            <div class="row">
+               <div class="col-2">
+                  <div class="component--table-example-test"></div>
+               </div>
+               <div class="col-8">
+                  <div class="scroll-wrapper">
+                     <div class="component--table-example">
+                        <img src="images/graph1.png">
+                     </div>
+                  </div>
+               </div>
+               <div class="col-2">
+                  <div class="component--table-example-test"></div>
+               </div>
+            </div>
+         </div>
+      </section>
+    
+      <!-- container2 -->
+    
+      <section class="container">
+         <div class="board2" id="board2id">
+    
+            <!-- header1 -->
+    
+            <div class="component--header-1">
+               <h1>Links</h1>
+            </div>
+    
+            <!-- button1 -->
+    
+            <div class="row">
+               <div class="col-5">
+                  <div class="component--button1-test"></div>
+               </div>
+               <div class="col-2">
+                  <div class="component--button1">
+                     <div class="button1-style">+ Add new</div>
+                  </div>
+               </div>
+               <div class="col-5">
+                  <div class="component--button1-test"></div>
+               </div>
+            </div>
+    
+            <!-- large table -->
+    
+            <div class="row">
+               <div class="col-2">
+                  <div class="component--large-table-test"></div>
+               </div>
+               <div class="col-8">
+                  <div class="component--large-table">
+                     <div class="scroll-wrapper">
+                        <table class="main-table">
+                           <tr class="table-row">
+                              <td class="table-1st-row">Home page</td>
+                              <td><a href="http://www.homepage.com" class="table-href">http://www.homepage.com</a></td>
+                              <td class="table-icons">
+                                 <img src="images/icons/links.svg" class="table-link-icon">
+                                 <img src="images/icons/trash.svg" class="table-trash-icon">
+                              </td>
+                           </tr>
+                           <tr class="table-row">
+                              <td class="table-1st-row">Currently offer</td>
+                              <td><a href="http://www.currently.com" class="table-href">http://www.currently.com</a></td>
+                              <td class="table-icons">
+                                 <img src="images/icons/links.svg" class="table-link-icon">
+                                 <img src="images/icons/trash.svg" class="table-trash-icon">
+                              </td>
+                           </tr>
+                           <tr class="table-row">
+                              <td class="table-1st-row">Blurpix</td>
+                              <td><a href="http://www.blurpix.com" class="table-href">http://www.blurpix.com</a></td>
+                              <td class="table-icons">
+                                 <img src="images/icons/links.svg" class="table-link-icon">
+                                 <img src="images/icons/trash.svg" class="table-trash-icon">
+                              </td>
+                           </tr>
+                           <tr class="table-row">
+                              <td class="table-1st-row">Your Site</td>
+                              <td><a href="http://www.yoursite.com" class="table-href">http://www.yoursite.com</a></td>
+                              <td class="table-icons">
+                                 <img src="images/icons/links.svg" class="table-link-icon">
+                                 <img src="images/icons/trash.svg" class="table-trash-icon">
+                              </td>
+                           </tr>
+                           <tr class="table-row">
+                              <td class="table-1st-row">Google</td>
+                              <td><a href="http://www.google.com" class="table-href">http://www.google.com</a></td>
+                              <td class="table-icons">
+                                 <img src="images/icons/links.svg" class="table-link-icon">
+                                 <img src="images/icons/trash.svg" class="table-trash-icon">
+                              </td>
+                           </tr>
+                           <tr class="table-row">
+                              <td class="table-1st-row">Facebook</td>
+                              <td><a href="http://www.facebook.com" class="table-href">http://www.facebook.com</a></td>
+                              <td class="table-icons">
+                                 <img src="images/icons/links.svg" class="table-link-icon">
+                                 <img src="images/icons/trash.svg" class="table-trash-icon">
+                              </td>
+                           </tr>
+                           <tr class="table-row">
+                              <td class="table-1st-row">Dashboard</td>
+                              <td><a href="http://www.dashboard.com" class="table-href">http://www.dashboard.com</a></td>
+                              <td class="table-icons">
+                                 <img src="images/icons/links.svg" class="table-link-icon">
+                                 <img src="images/icons/trash.svg" class="table-trash-icon">
+                              </td>
+                           </tr>
+                           <tr class="table-row">
+                              <td class="table-1st-row">Blurax</td>
+                              <td><a href="http://www.blurax.com" class="table-href">http://www.blurax.com</a></td>
+                              <td class="table-icons">
+                                 <img src="images/icons/links.svg" class="table-link-icon">
+                                 <img src="images/icons/trash.svg" class="table-trash-icon">
+                              </td>
+                           </tr>
+                           <tr class="table-row">
+                              <td class="table-1st-row">Piece of wine</td>
+                              <td><a href="http://www.pieceofwine.com" class="table-href">http://www.pieceofwine.com</a></td>
+                              <td class="table-icons">
+                                 <img src="images/icons/links.svg" class="table-link-icon">
+                                 <img src="images/icons/trash.svg" class="table-trash-icon">
+                              </td>
+                           </tr>
+                           <tr class="table-row">
+                              <td class="table-1st-row">Twitter</td>
+                              <td><a href="http://www.twitter.com" class="table-href">http://www.twitter.com</a></td>
+                              <td class="table-icons">	
+                                 <img src="images/icons/links.svg" class="table-link-icon">
+                                 <img src="images/icons/trash.svg" class="table-trash-icon">
+                              </td>
+                           </tr>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-2">
+                  <div class="component--large-table-test"></div>
+               </div>
+            </div>
+    
+            <!-- button1 -->	
+    
+            <div class="component--button1-example">
+               <div class="button1-style">+ Add new</div>
+            </div>
+         </div>
+      </section>
+      <script src="js/script.js"></script>
+   </body>
+</html>

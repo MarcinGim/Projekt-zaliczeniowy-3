@@ -1,318 +1,264 @@
 <!DOCTYPE html>
 <html>
-	<head>
-	    <meta charset="UTF-8">
-	    <title>First project</title>
-	    <link rel="stylesheet" reg="text/css" href="css/style.css">
-	    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700" rel="stylesheet">
-	    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-	</head>
-	<body id="bodyGeneral">
-
-<!-- top navbar -->
-
-	<nav class="component--top-navbar"> 
-      	<ul>
-          
-          	<li class="top-button-1">  
-                <a href="#text"><img src="images/icons/wallet.svg"></a>
-                <a href="#text"><span>$1,500.00</span></a>
-                <a href="#text"><img src="images/icons/arrow-down.svg"></a>
-          	</li>
-          
-          	<li class="top-button-2">
-                <a href="#link"><img src="images/icons/notification.svg"></a>
-                <div class="orange-dot-top"></div>
-          	</li>
-		      
-          	<li class="top-button-user" id="loginBtn">
-                <a href="#text"><img src="images/icons/profile.svg"></a>
-                <a href="#text"><span>Leonardo Di Caprio</span></a>
-          	</li>
-            
-          	<li class="top-button-4" id="myBtn">  
-              	<a href="#text"><img src="images/icons/quit.svg"></a>
-          	</li>
-        
-    	</ul>	
-  	</nav>
-
-<!-- quit modal -->
-
-	<div id="myModal" class="modal">
-		<div class="modal-content">
-			<div class="component--header-1">
-					
-				<h1>Do you really want to quit?</h1>
-			</div>
-			<div class="quit-modal-buttons">	
-				<div class="cancel-button close">Cancel</div>	
-				<div class="quit-button">Quit</div>
-			</div>	    
-		</div>
-	</div>  	
-
-<!-- login modal -->
-
-		<div id="myModal2" class="modal2">
-			<div class="modal-content2">
-		    	<span class="close2">&times;</span>
-		    	<div class="component--header-1">	
-					<h1>login</h1>
-				</div>
-				<div class="login-modal-options">
-					<div class="type-login-frame">
-						<img src="images/icons/login.svg">
-						<span>login name</span>
-					</div>
-					<div class="type-password-frame">
-						<img src="images/icons/password.svg">
-						<span>password</span>
-					</div>
-					<div class="enter-button-frame">
-						<span>Enter</span>	
-					</div>	
-				</div>
-
-		  	</div>
-		</div>
-
-<!-- left navbar -->
-
-	<nav class="left-navbar" id="leftnav">
-     	  
-	    <div class="left-nav-logo">
-		    <a href="index.html" class="web-logo"><img src="https://i.ibb.co/r4ZDYLc/logo.png" alt="logo" border="0"></a>
-		    <a href="#link" class="hamburger" id="hamburger"><img src="https://i.ibb.co/bFkv9Sz/hamburger.png" alt="hamburger" border="0"></a>        
-		</div>
-	    
-	    <ul> 
-	        <li class="left-menu-button">
-	            <a href="index.html">
-	            <img src="images/icons/general.svg">
-	            <span class="sidebar-title" id="generalButton">General</span>
-	            </a>
-	        </li>
-	        
-          	<li class="left-menu-button">
-	            <a href="detail.html">
-	            <img src="images/icons/details.svg">
-	            <span class="sidebar-title">Details</span>
-	            </a>
-	        </li>
-        
-        
-	        <li class="left-menu-button">
-	            <a href="links.html">
-	            <img src="images/icons/links.svg">
-	            <span class="sidebar-title">Links</span>
-	            </a>
-	        </li>
-        
-	        <li class="left-menu-button">
-	            <a href="banners.html">
-	            <img src="images/icons/banners.svg">
-	            <span class="sidebar-title">Banners</span>
-	            </a>
-	        </li>
-    
-	        <li class="left-menu-button">
-	            <a href="personal_data.html">
-	            <img src="images/icons/personaldata.svg">
-	            <span class="sidebar-title">Personal data</span>
-	            </a>
-	        </li>
-        
-	        <li class="left-menu-button">
-	            <a href="payout.html">
-	            <img src="images/icons/payout.svg">
-	            <span class="sidebar-title">Payout</span>
-	            </a>
-	        </li>
-        
-	        <li class="left-menu-button">
-	            <a href="#link">
-	            <img src="images/icons/postback.svg">
-	            <span class="sidebar-title">Postback</span>
-	            </a>
-	        </li> 
-
-	        <div class="left-menu-disable-elements">
-
-		        <li class="left-menu-button">
-		            <a href="#link">
-		            <img src="images/icons/wallet.svg">
-		            <span class="sidebar-title">$1,500.00</span>
-		            </a>
-		        </li>
-	    
-		        <li class="left-menu-button">
-		            <a href="#link">
-		            <img src="images/icons/notification.svg">
-		            <span class="sidebar-title">Notification</span>
-		            </a>
-		        </li>
-	        
-		        <li class="left-menu-button">
-		            <a href="#link">
-		            <img src="images/icons/profile.svg">
-		            <span class="sidebar-title">User Name</span>
-		            </a>
-		        </li>
-	        
-		        <li class="left-menu-button" id="myBtnMobile">
-		            <a href="#link">
-		            <img src="images/icons/quit.svg">
-		            <span class="sidebar-title">Logout</span>
-		            </a>
-		        </li> 
-
-		    </div>    
-	    
-	    </ul>  
-	      
-	    <div class="left-nav-user">
-	       	<h1>Your Manager</h1>
-	        <a href="#link"><img src="https://i.ibb.co/5Gk2fDH/photo.png" alt="photo" border="0"></a>
-	        <a href="#link" class="user-name-lnb">Mikhael E.</a>
-	        <div class="green-dot-left"></div>
-	    </div>    
-    	
-    </nav>		
-
-<!-- container1 -->
-
-    <section class="container">
-    	<div class="board">
-
-<!-- header -->
-
-		<div class="component--header-1">
-			<h1>General statistic</h1>	
-		</div>
-
-<!-- calendar -->
-
-		<div class="row">
-			
-			<div class="component--calendar-frame">
-				<div class="calendar-frame"> 
-					<span class="board-caldendar-date1">16.05.2016</span>
-			        <span class="board-caldendar-date2">16.05.2016</span>  
-			        <a href="#text"><img src="images/icons/calendar.svg"></a>
-			    </div>
-
-			    <div class="refresh-calendar">
-			        <a href="#text"><img src="images/icons/refresh.svg"></a>
-			    </div>
-		    </div>
-		
-		</div>	
-
-<!-- large table 2 -->
-
-		<div class="large-table-2">
-			<div class="scroll-wrapper">
-				<table>
-					<tr class="lt2-headers">
-						<th>
-							<div class="lt2-headers-background">Date
-								<img src="images/icons/arrow-up.svg">
-							</div>
-						</th>
-						<th>
-							<div class="lt2-headers-background">Amount ($)
-								<img src="images/icons/arrow-up.svg">
-							</div>
-						</th>
-						<th>
-							<div class="lt2-headers-background">Deal
-								<img src="images/icons/arrow-up.svg">	
-							</div>
-						</th>
-						<th>
-							<div class="lt2-headers-background">Account
-								<img src="images/icons/arrow-up.svg">	
-							</div>
-						</th>	
-					</tr>
-					<tr class="lt2-rows">
-						<td>16/08/19 (15:42)</td>
-						<td>30,426 00</td>
-						<td>cpl (200)</td>
-						<td>bank</td>
-					</tr>
-					<tr class="lt2-rows">
-						<td>16/08/19 (15:42)</td>
-						<td>30,426 00</td>
-						<td>cpl (200)</td>
-						<td>bank</td>
-					</tr>
-					<tr class="lt2-rows">
-						<td>16/08/19 (15:42)</td>
-						<td>30,426 00</td>
-						<td>cpl (200)</td>
-						<td>bank</td>
-					</tr>
-					<tr class="lt2-rows">
-						<td>16/08/19 (15:42)</td>
-						<td>30,426 00</td>
-						<td>cpl (200)</td>
-						<td>bank</td>
-					</tr>
-					<tr class="lt2-rows">
-						<td>16/08/19 (15:42)</td>
-						<td>30,426 00</td>
-						<td>cpl (200)</td>
-						<td>bank</td>
-					</tr>
-					<tr class="lt2-rows">
-						<td>16/08/19 (15:42)</td>
-						<td>30,426 00</td>
-						<td>cpl (200)</td>
-						<td>bank</td>
-					</tr>
-					<tr class="lt2-rows">
-						<td>16/08/19 (15:42)</td>
-						<td>30,426 00</td>
-						<td>cpl (200)</td>
-						<td>bank</td>
-					</tr>
-					<tr class="lt2-rows">
-						<td>16/08/19 (15:42)</td>
-						<td>30,426 00</td>
-						<td>cpl (200)</td>
-						<td>bank</td>
-					</tr>	
-				</table>
-			</div>	
-		</div>	
-
-<!-- numbers -->		
-
-		<div class="page-numbers">
-			<img src="images/icons/arrow-left.svg">
-			<span class="page-number page-number-bg">1</span>
-			<span class="page-number">2</span>
-			<span class="page-number">3</span>
-			<span class="page-number">4</span>
-			<span class="page-number">5</span>
-			<span class="page-number">6</span>
-			<span class="page-number">7</span>
-			<span class="page-number">8</span>
-			<img src="images/icons/arrow-right.svg">		
-		</div>
-
-
-
-
-
-
-</div>
-</section>
-
-<script src="js/script.js"></script>
-
-</body>
+   <head>
+      <meta charset="UTF-8">
+      <title>First project</title>
+      <link rel="stylesheet" reg="text/css" href="css/style.css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+   <body id="bodyGeneral">
+      <!-- top navbar -->
+      <nav class="component--top-navbar">
+         <ul>
+            <li class="top-button-1">  
+               <a href="#text"><img src="images/icons/wallet.svg"></a>
+               <a href="#text"><span>$1,500.00</span></a>
+               <a href="#text"><img src="images/icons/arrow-down.svg"></a>
+            </li>
+            <li class="top-button-2">
+               <a href="#link"><img src="images/icons/notification.svg"></a>
+               <div class="orange-dot-top"></div>
+            </li>
+            <li class="top-button-user" id="loginBtn">
+               <a href="#text"><img src="images/icons/profile.svg"></a>
+               <a href="#text"><span>Leonardo Di Caprio</span></a>
+            </li>
+            <li class="top-button-4" id="myBtn">  
+               <a href="#text"><img src="images/icons/quit.svg"></a>
+            </li>
+         </ul>
+      </nav>
+      <!-- quit modal -->
+      <div id="myModal" class="modal">
+         <div class="modal-content">
+            <div class="component--header-1">
+               <h1>Do you really want to quit?</h1>
+            </div>
+            <div class="quit-modal-buttons">
+               <div class="cancel-button close">Cancel</div>
+               <div class="quit-button">Quit</div>
+            </div>
+         </div>
+      </div>
+      <!-- login modal -->
+      <div id="myModal2" class="modal2">
+         <div class="modal-content2">
+            <span class="close2">&times;</span>
+            <div class="component--header-1">
+               <h1>login</h1>
+            </div>
+            <div class="login-modal-options">
+               <div class="type-login-frame">
+                  <img src="images/icons/login.svg">
+                  <span>login name</span>
+               </div>
+               <div class="type-password-frame">
+                  <img src="images/icons/password.svg">
+                  <span>password</span>
+               </div>
+               <div class="enter-button-frame">
+                  <span>Enter</span>	
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- left navbar -->
+      <nav class="left-navbar" id="leftnav">
+         <div class="left-nav-logo">
+            <a href="index.html" class="web-logo"><img src="https://i.ibb.co/r4ZDYLc/logo.png" alt="logo" border="0"></a>
+            <a href="#link" class="hamburger" id="hamburger"><img src="https://i.ibb.co/bFkv9Sz/hamburger.png" alt="hamburger" border="0"></a>        
+         </div>
+         <ul>
+            <li class="left-menu-button">
+               <a href="index.html">
+               <img src="images/icons/general.svg">
+               <span class="sidebar-title" id="generalButton">General</span>
+               </a>
+            </li>
+            <li class="left-menu-button">
+               <a href="detail.html">
+               <img src="images/icons/details.svg">
+               <span class="sidebar-title">Details</span>
+               </a>
+            </li>
+            <li class="left-menu-button">
+               <a href="links.html">
+               <img src="images/icons/links.svg">
+               <span class="sidebar-title">Links</span>
+               </a>
+            </li>
+            <li class="left-menu-button">
+               <a href="banners.html">
+               <img src="images/icons/banners.svg">
+               <span class="sidebar-title">Banners</span>
+               </a>
+            </li>
+            <li class="left-menu-button">
+               <a href="personal_data.html">
+               <img src="images/icons/personaldata.svg">
+               <span class="sidebar-title">Personal data</span>
+               </a>
+            </li>
+            <li class="left-menu-button">
+               <a href="payout.html">
+               <img src="images/icons/payout.svg">
+               <span class="sidebar-title">Payout</span>
+               </a>
+            </li>
+            <li class="left-menu-button">
+               <a href="#link">
+               <img src="images/icons/postback.svg">
+               <span class="sidebar-title">Postback</span>
+               </a>
+            </li>
+            <div class="left-menu-disable-elements">
+               <li class="left-menu-button">
+                  <a href="#link">
+                  <img src="images/icons/wallet.svg">
+                  <span class="sidebar-title">$1,500.00</span>
+                  </a>
+               </li>
+               <li class="left-menu-button">
+                  <a href="#link">
+                  <img src="images/icons/notification.svg">
+                  <span class="sidebar-title">Notification</span>
+                  </a>
+               </li>
+               <li class="left-menu-button">
+                  <a href="#link">
+                  <img src="images/icons/profile.svg">
+                  <span class="sidebar-title">User Name</span>
+                  </a>
+               </li>
+               <li class="left-menu-button" id="myBtnMobile">
+                  <a href="#link">
+                  <img src="images/icons/quit.svg">
+                  <span class="sidebar-title">Logout</span>
+                  </a>
+               </li>
+            </div>
+         </ul>
+         <div class="left-nav-user">
+            <h1>Your Manager</h1>
+            <a href="#link"><img src="https://i.ibb.co/5Gk2fDH/photo.png" alt="photo" border="0"></a>
+            <a href="#link" class="user-name-lnb">Mikhael E.</a>
+            <div class="green-dot-left"></div>
+         </div>
+      </nav>
+      <!-- container1 -->
+      <section class="container">
+         <div class="board">
+            <!-- header -->
+            <div class="component--header-1">
+               <h1>General statistic</h1>
+            </div>
+            <!-- calendar -->
+            <div class="row">
+               <div class="component--calendar-frame">
+                  <div class="calendar-frame"> 
+                     <span class="board-caldendar-date1">16.05.2016</span>
+                     <span class="board-caldendar-date2">16.05.2016</span>  
+                     <a href="#text"><img src="images/icons/calendar.svg"></a>
+                  </div>
+                  <div class="refresh-calendar">
+                     <a href="#text"><img src="images/icons/refresh.svg"></a>
+                  </div>
+               </div>
+            </div>
+            <!-- large table 2 -->
+            <div class="large-table-2">
+               <div class="scroll-wrapper">
+                  <table>
+                     <tr class="lt2-headers">
+                        <th>
+                           <div class="lt2-headers-background">Date
+                              <img src="images/icons/arrow-up.svg">
+                           </div>
+                        </th>
+                        <th>
+                           <div class="lt2-headers-background">Amount ($)
+                              <img src="images/icons/arrow-up.svg">
+                           </div>
+                        </th>
+                        <th>
+                           <div class="lt2-headers-background">Deal
+                              <img src="images/icons/arrow-up.svg">	
+                           </div>
+                        </th>
+                        <th>
+                           <div class="lt2-headers-background">Account
+                              <img src="images/icons/arrow-up.svg">	
+                           </div>
+                        </th>
+                     </tr>
+                     <tr class="lt2-rows">
+                        <td>16/08/19 (15:42)</td>
+                        <td>30,426 00</td>
+                        <td>cpl (200)</td>
+                        <td>bank</td>
+                     </tr>
+                     <tr class="lt2-rows">
+                        <td>16/08/19 (15:42)</td>
+                        <td>30,426 00</td>
+                        <td>cpl (200)</td>
+                        <td>bank</td>
+                     </tr>
+                     <tr class="lt2-rows">
+                        <td>16/08/19 (15:42)</td>
+                        <td>30,426 00</td>
+                        <td>cpl (200)</td>
+                        <td>bank</td>
+                     </tr>
+                     <tr class="lt2-rows">
+                        <td>16/08/19 (15:42)</td>
+                        <td>30,426 00</td>
+                        <td>cpl (200)</td>
+                        <td>bank</td>
+                     </tr>
+                     <tr class="lt2-rows">
+                        <td>16/08/19 (15:42)</td>
+                        <td>30,426 00</td>
+                        <td>cpl (200)</td>
+                        <td>bank</td>
+                     </tr>
+                     <tr class="lt2-rows">
+                        <td>16/08/19 (15:42)</td>
+                        <td>30,426 00</td>
+                        <td>cpl (200)</td>
+                        <td>bank</td>
+                     </tr>
+                     <tr class="lt2-rows">
+                        <td>16/08/19 (15:42)</td>
+                        <td>30,426 00</td>
+                        <td>cpl (200)</td>
+                        <td>bank</td>
+                     </tr>
+                     <tr class="lt2-rows">
+                        <td>16/08/19 (15:42)</td>
+                        <td>30,426 00</td>
+                        <td>cpl (200)</td>
+                        <td>bank</td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+            <!-- numbers -->		
+            <div class="page-numbers">
+               <img src="images/icons/arrow-left.svg">
+               <span class="page-number page-number-bg">1</span>
+               <span class="page-number">2</span>
+               <span class="page-number">3</span>
+               <span class="page-number">4</span>
+               <span class="page-number">5</span>
+               <span class="page-number">6</span>
+               <span class="page-number">7</span>
+               <span class="page-number">8</span>
+               <img src="images/icons/arrow-right.svg">		
+            </div>
+         </div>
+      </section>
+      <script src="js/script.js"></script>
+   </body>
 </html>
