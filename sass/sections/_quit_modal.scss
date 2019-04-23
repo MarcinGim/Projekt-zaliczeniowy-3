@@ -1,7 +1,7 @@
 .modal {
     display: none; 
     position: fixed; 
-    z-index: 1; 
+    z-index: 9999; 
     left: 0;
     top: 0;
     width: 100%;
@@ -17,7 +17,6 @@
     margin: auto;
     border: 1px solid #888;
     width: 30%;
-    height: 30%;
 }
 
 .modal-content h1 {
@@ -25,7 +24,7 @@
 }
 
 .cancel-button {
-    display: inline;
+    display: inline-block;
     text-align: center;
     color: white;
     font-size: 18px;
@@ -41,7 +40,7 @@
 }
 
 .quit-button {
-    display: inline;
+    display: inline-block;
     text-align: center;
     color: white;
     font-size: 18px;
@@ -57,7 +56,6 @@
 }
 
 .quit-modal-buttons {
-  float: right;
-  padding: 25px 0 0 0;
+  text-align: center;
 }
 

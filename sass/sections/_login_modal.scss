@@ -23,7 +23,8 @@
     color: #aaaaaa;
     font-size: 28px;
     font-weight: bold;
-    padding: 5px 10px;
+    padding: 10px 15px;
+    float: right;
 }
 
 .close2:hover,
@@ -39,6 +40,7 @@
 
 .login-modal-options {
     display: inline-block;
+    test-align: center;
 }
 
 .login-modal-options {
@@ -50,14 +52,15 @@
 }
 
 .type-login-frame {
+    display: inline-block;
+    text-align: center;
     font-size: 14px;
     color: #a6a6a6;
     margin: 25px 10px 30px 30px;
-    padding: 10px 30px 10px 10px;
+    padding: 10px 10px 10px 10px;
     width: 200px;
     height: 100%;
     border: 1px solid #a6a6a6;
-    float: left; 
     border-radius: 2px;
     &:hover {
         color: #333333;
@@ -66,14 +69,15 @@
 }
 
 .type-password-frame {
+    display: inline-block;
+    text-align: center;
     font-size: 14px;
     color: #a6a6a6;
     margin: 25px 0 30px 20px;
-    padding: 10px 30px 10px 10px;
+    padding: 10px 10px 10px 10px;
     width: 200px;
     height: 100%;
     border: 1px solid #a6a6a6;
-    float: left;
     border-radius: 2px;
     &:hover {
         color: #333333;
@@ -82,15 +86,15 @@
 }
 
 .enter-button-frame {
+    display: inline-block;
     text-align: center;
-    margin: 25px 10px 30px 20px;
+    margin: 25px 0 35px 20px;
     width: 150px;
     height: 100%;
-    padding: 14px 20px;
+    padding: 18px 20px 11px 20px;
     font-size: 14px;
     color: white;
     background-color: #f58220;
-    float: right;
     border-radius: 2px;
     &:hover {
         background-color: #ffa200;  
@@ -106,5 +110,11 @@
 .type-password-frame {
     span {
         padding: 0 0 0 10px;
+    }
+}
+
+.enter-button-frame {
+    span {
+        padding: 0 0 5px 0;
     }
 }
