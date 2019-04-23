@@ -4,10 +4,10 @@
 @import 'layout';
 
 /* Components */
-@import 'components/header1';
-@import 'components/header2';
+@import 'components/pageMainHeader';
+@import 'components/pageSmallerHeader';
 @import 'components/table_example';
-@import 'components/button1';
+@import 'components/button-addNew';
 
 /* Sections */
 @import 'sections/top_navbar';

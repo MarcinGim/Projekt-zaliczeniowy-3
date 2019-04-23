@@ -4,21 +4,21 @@
 
 var modal = document.getElementById('myModal');
 
-var btn = document.getElementById("myBtn");
+var btn = document.getElementById('myBtn');
 
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName('close')[0];
 
 btn.onclick = function() {
-	modal.style.display = "block";
+	modal.style.display = 'block';
 }	
 
 span.onclick = function() {
-	modal.style.display = "none";
+	modal.style.display = 'none';
 }	
 
 window.onclick = function(event) {
 	if (event.target == modal) {
-	    modal.style.display = "none";
+	    modal.style.display = 'none';
 	  		}
 		}
 
@@ -26,21 +26,21 @@ window.onclick = function(event) {
 
 var modal2 = document.getElementById('myModal2');
 
-var btn2 = document.getElementById("loginBtn");
+var btn2 = document.getElementById('loginBtn');
 
-var span2 = document.getElementsByClassName("close2")[0];
+var span2 = document.getElementsByClassName('close2')[0];
 
 btn2.onclick = function() {
-	modal2.style.display = "block";
+	modal2.style.display = 'block';
 }	
 
 span2.onclick = function() {
-	modal2.style.display = "none";
+	modal2.style.display = 'none';
 }	
 
 window.onclick = function(event) {
 	if (event.target == modal2) {
-	   		modal2.style.display = "none";
+	   		modal2.style.display = 'none';
 	  	}
 	}
 
@@ -62,9 +62,9 @@ hamburger.addEventListener('click', function(){
 
 // logout button on mobile
 
-var btnMobile = document.getElementById("myBtnMobile");
+var btnMobile = document.getElementById('myBtnMobile');
 
 btnMobile.onclick = function() {
-	modal.style.display = "block";
+	modal.style.display = 'block';
 }	
 

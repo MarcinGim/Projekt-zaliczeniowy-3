@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "pageSmallerHeader.css",
+	"sources": [
+		"../../sass/components/pageSmallerHeader.scss"
+	],
+	"names": [],
+	"mappings": "AAAA,AAAA,wBAAwB,CAAC;EACrB,gBAAgB,EAAE,KAAK;EACvB,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,OAAO,EAAE,IAAI;EACb,OAAO,EAAE,YAAY;EACrB,eAAe,EAAE,UAAU;EAC3B,WAAW,EAAE,MAAM;EACnB,MAAM,EAAE,MAAM;EACd,WAAW,EAAE,KAAK;CACrB"
+}
