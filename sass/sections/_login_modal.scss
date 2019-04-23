@@ -17,12 +17,10 @@
     margin: auto;
     border: 1px solid #888;
     width: 50%;
-    height: 35%;
 }
 
 .close2 {
     color: #aaaaaa;
-    float: right;
     font-size: 28px;
     font-weight: bold;
     padding: 5px 10px;
@@ -40,8 +38,7 @@
 }
 
 .login-modal-options {
-    float: left; 
-    display: inline;
+    display: inline-block;
 }
 
 .login-modal-options {
